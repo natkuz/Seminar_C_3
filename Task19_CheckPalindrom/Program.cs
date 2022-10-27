@@ -7,16 +7,9 @@ void PrintCheckPalindrom(string number)
 {
     if (number.Length == 5)
     {
-        if (number[0] == number[4])
+        if (number[0] == number[4] && number[1] == number[3])
         {
-            if (number[1] == number[3])
-            {
-                Console.WriteLine("Да, значение является палиндромом");
-            }
-            else
-            {
-                Console.WriteLine("Нет, значение не является палиндромом");
-            }
+            Console.WriteLine("Да, значение является палиндромом");
         }
         else
         {
